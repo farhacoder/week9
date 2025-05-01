@@ -1,8 +1,24 @@
-function delayedcall(fn:()=>void):void{
-setTimeout(fn,1000)
+function isLegal(user:{firstname:string,
+    age:number
+
+}){
+    if(user.age<18){
+        return true
+    }
+    else{
+        return false
+    }
+        
 }
 
-delayedcall(function(){
-    console.log("hi there");
-    
+function greet(
+    user:{firstname:string,
+    age:number})
+    {
+console.log("hi"+user.firstname);
+
+}
+isLegal({
+    firstname:"farha",
+    age:28
 })

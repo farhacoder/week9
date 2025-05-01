@@ -1,2 +1,5 @@
-let x:number=  101
-console.log(x)
+function greet(uname:string){
+    console.log("hello",uname);
+    
+}
+greet("farha")
